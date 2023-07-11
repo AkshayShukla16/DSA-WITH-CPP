@@ -11,6 +11,7 @@ int main(){
     while(i<n){
         if(n%i==0){
             cout<<"Not a Prime Number";
+            break;
         }else{
             cout<<"Prime Number"<<endl;
         }
