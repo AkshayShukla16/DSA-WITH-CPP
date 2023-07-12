@@ -26,7 +26,8 @@ int main(){
 
     if(n<1){
         cout<<"false";
-    }else if((n & (n-1))==0){
+    }
+    else if((n & (n-1))==0){
         cout<<"true";
     }else{
         cout<<"false";
