@@ -3,23 +3,23 @@ using namespace std;
 
 
 int getMax(int arr[], int size){
-    int max= INT32_MIN;
-    for(int i=0; i<size; i++){
-        if(arr[i]>max){
-            max=arr[i];
+    int maximum= INT32_MIN;
+    for(int i=0; i<size; i++){      // we can also use inbuilt fxn maximum =max(maximum, arr[i] )
+        if(arr[i]>maximum){
+            maximum=arr[i];
         }
     }
-        return max;
+        return maximum;
 }
 
 int getMin(int arr[], int size){
-    int min= INT32_MAX;
-    for(int i=0; i<size; i++){
-        if(arr[i]<min){
-            min=arr[i];
+    int minimum= INT32_MAX;
+    for(int i=0; i<size; i++){    // we can also use inbuilt fxn minimum =min(minimum, arr[i] )
+        if(arr[i]<minimum){
+            minimum=arr[i];
         }
     }
-    return min;
+    return minimum;
 } 
 
 int main(){
@@ -32,11 +32,8 @@ int main(){
     for(int i=0; i<size; i++){
         cin>>num[i];
     }
-   
-    int Max_Value= getMax(num, size);
-    int Min_Value= getMin(num, size);
 
-    cout<<"Maximum is: "<<Max_Value<<endl;
-    cout<<"Manimum is: "<<Min_Value<<endl;
+    cout<<"Maximum is: "<<getMax(num, size)<<endl;
+    cout<<"Manimum is: "<<getMin(num, size)<<endl;
 
 }
