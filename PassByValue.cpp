@@ -18,5 +18,5 @@ int main()
     cin>>num;
     
    Callme(num); // Pass by value concept
-   cout<<"Number in main fxn is: ";  // Num=22
+   cout<<"Number in main fxn is: "<<num;  // Num=22
 }
